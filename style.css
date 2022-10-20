@@ -12,7 +12,10 @@
   font-family: space Grotesk;
   overflow-x: hidden;
 }
-
+body i,
+h3 {
+  cursor: pointer;
+}
 header {
   display: grid;
   grid-template-columns: repeat(1, 2fr) repeat(1, 1fr);
@@ -24,7 +27,16 @@ header {
   box-shadow: 0 0 3px 1px black;
   color: black;
 }
-
+.name-small i {
+  margin-top: 15px;
+  position: absolute;
+  right: 37%;
+}
+.name-small h3 {
+  position: absolute;
+  right: 29%;
+  top: 10%;
+}
 header input {
   width: 300px;
   border-radius: 10px;
@@ -40,6 +52,26 @@ header input {
   font-size: 1.1rem;
   margin-left: 60px;
   font-family: lato;
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.name-big h3 {
+  margin: 0 7px 0 7px;
+}
+#bigname {
+  position: absolute;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.Connect i {
+  margin-left: 10px;
+}
+.Connect i:hover {
+  transform: scale(0.97);
 }
 nav {
   padding: 10px;
@@ -50,7 +82,7 @@ nav {
 }
 button {
   height: 30px;
-  width: 60px;
+  width: 80px;
   border-radius: 20px;
   background-color: var(--main-color);
   color: #0a0908;
@@ -74,7 +106,7 @@ button:hover {
 }
 
 .dashboard h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 20px;
   margin-left: 20%;
 }
@@ -149,7 +181,7 @@ button:hover {
   right: 4%;
   top: 35%;
   font-size: 0.8rem;
-  height: 100vh;
+  height: auto;
   box-shadow: 1px 1px 10px #888888;
   padding: 10px;
 }
@@ -163,11 +195,20 @@ button:hover {
   width: 200px;
 }
 .Hobbies {
-  margin-top: 40px;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
+
+  position: absolute;
+  left: 80%;
+  top: 100%;
+  margin-top: 100px;
+  height: 500x;
+  width: 200px;
+  box-shadow: 1px 1px 10px #888888;
+  padding: 5px;
 }
 .Hobbies div {
   flex: 1;
   font-size: 1.1rem;
+  margin-top: 20px;
 }
